@@ -1,0 +1,60 @@
+.CardRecipe {
+    background-color: #ffffff;
+    padding: 16px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    box-shadow: 0 4px 12px 0 rgba(135, 135, 135, 0.2), 0 4px 0px 0 rgba(135, 135, 135, 0.05);
+    transition: all 0.4s;
+
+    &:hover {
+        box-shadow: 0 4px 12px 0 rgba(71, 71, 71, 0.5), 0 4px 0px 0 rgba(135, 135, 135, 0.05);
+    }
+
+    &-header {
+        display: flex;
+        justify-content: space-between;
+
+        &--actions {
+            display: flex;
+            gap: 16px;
+        }
+    }
+    
+    &-icon {
+        cursor: pointer;
+        width: 24px;
+    }
+
+
+    &-image {
+        width: 100%;
+        height: 200px;
+        object-fit: contain;
+        cursor: pointer;
+    }
+
+    &-title {
+        font-size: 18px;
+        font-weight: bold;
+        color: #4D4D4D;
+        margin: 0;
+    }
+
+    &-text {
+        font-size: 16px;
+        color: #909090;
+        margin: 0;
+        
+    }
+
+    &-link {
+        font-size: 16px;
+        color: #7C403E;
+        text-align: left;
+        width: 100%;
+        padding-top: 16px;
+        cursor: pointer;
+    }
+}

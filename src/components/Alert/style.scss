@@ -1,0 +1,35 @@
+.Alert {
+    z-index: 1;
+    position: fixed;
+    top: 40px;
+    right: 40px;
+    padding: 24px;
+    background-color: #ffffff;
+    border-left: 5px solid;
+    box-shadow: 0 4px 12px 0 rgba(135, 135, 135, 0.2), 0 4px 0px 0 rgba(135, 135, 135, 0.05);
+    transition: all 0.5s;
+    border-radius: 2px;
+    max-width: 400px;
+
+    &.success {
+        font-size: 16px;
+        font-weight: 500;
+        color: #467843;
+        border-color: #467843;
+    }
+    
+    &.error {
+        font-size: 16px;
+        font-weight: 500;
+        color: #a92919;
+        border-color: #a92919;
+    }
+    
+    &.warning {
+        font-size: 16px;
+        font-weight: 500;
+        color: #c1b720;
+        border-color: #c1b720;
+    }
+    
+}

@@ -1,0 +1,55 @@
+.CardCategory {
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 40px 16px;
+    border-radius: 8px;
+    transition: all 0.4s;
+    cursor: pointer;
+    position: relative;
+
+    &:hover {
+        box-shadow: 0 4px 12px 0 rgba(71, 71, 71, 0.5), 0 4px 0px 0 rgba(135, 135, 135, 0.05);
+
+    }
+
+    &-image {
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 100%;
+    }
+
+    &-text {
+        position: relative;
+        z-index: 1;
+    }
+
+    &.lightBlue {
+        background-color: #EBF4F4;
+        color: #265271;
+    }
+
+    &.blue {
+        background-color: #024879;
+    }
+
+    &.pink {
+        background-color: #EFCFCE;
+        color: #641010
+    }
+
+
+    &.purple {
+        background-color: #7D3458;
+    }
+
+    &.green {
+        background-color: #BFCDAB;
+    }
+
+    &.yellow {
+        background-color: #FFD5A3;
+        color: #7C5738;            
+    }
+}

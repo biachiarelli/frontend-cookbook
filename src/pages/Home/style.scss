@@ -1,0 +1,47 @@
+.Home {
+    padding-bottom: 60px;
+
+    &-container {
+        margin: auto;
+        max-width: 1200px;
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        padding:  0 16px;
+    }
+
+    &-search {
+
+        &--input {
+            background-color: #ffffff;
+            border: 1px solid #cccccc;
+            border-radius: 40px;
+            min-height: 32px;
+            text-indent: 8px;
+            width: 400px;
+        }
+    }
+
+    &-empty {
+        font-size: 32px;
+        color: #A4A1A1;
+        margin: 0;
+        font-family: HomemadeApple;
+        text-align: center;
+        margin-top: 60px;
+        margin-bottom: 120px;
+    }
+
+    &-category {
+        display: grid;
+        gap: 16px;
+        grid-template-columns: repeat(6, 1fr);
+    }
+
+    &-list {
+        display: grid;
+        gap: 16px;
+        grid-template-columns: repeat(4, calc(25% - 12px));
+        transition: all 0.5s;
+    }
+}

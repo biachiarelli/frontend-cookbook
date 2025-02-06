@@ -1,0 +1,10 @@
+
+@font-face {
+  font-family: HomemadeApple;
+  src: url('assets/fonts/HomemadeApple-Regular.ttf');
+  
+}
+
+:root, body, textarea {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
