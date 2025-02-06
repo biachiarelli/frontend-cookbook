@@ -2,6 +2,11 @@
 
 This is the frontend of the Recipe Book system built with **React** and **Vite**. It connects to the backend API to display and manage recipes.
 
+![image](https://github.com/user-attachments/assets/bf480ed4-eb56-4a29-a09e-d7cef2cda919)
+
+
+**Backend: https://github.com/biachiarelli/backend-cookbook**
+
 ---
 
 ## 📋 Features
