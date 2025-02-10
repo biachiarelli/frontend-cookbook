@@ -8,6 +8,9 @@ import { useNavigate, useParams } from 'react-router-dom'
 import Button from '../../components/Button'
 import { defaultImageRecipe } from '../../shared/detaultImageRecipe'
 import Alert from '../../components/Alert'
+import Input from '../../components/Input'
+import Select from '../../components/Select'
+import TextArea from '../../components/TextArea'
 
 export default function AddRecipe() {
     let { id } = useParams();
@@ -78,7 +81,12 @@ export default function AddRecipe() {
         }
     }
 
-    function send() {
+    function send() {       
+        console.log(nameInput.current.value)
+        console.log(imageUrlInput.current.value)
+        console.log(categoryInput.current.value)
+        console.log(instructionsInput.current.value)
+        
         if( !nameInput.current.value ||
             !imageUrlInput.current.value ||
             !categoryInput.current.value ||
@@ -174,29 +182,11 @@ export default function AddRecipe() {
             <Header props={propsHeader} />
             <div className='AddRecipe-content'>
                 <form className='AddRecipe-form'>
-                    <div className='AddRecipe-form--group'>
-                        <label htmlFor='name'>Nome: </label>
-                        <input required name='name' className='AddRecipe-form--input' ref={nameInput} />
-                    </div>
-                    <div className='AddRecipe-form--group'>
-                        <label htmlFor='imageUrl'>Url da imagem: </label>
-                        <input required name='imageUrl' className='AddRecipe-form--input' ref={imageUrlInput} onBlur={changeImage} />
-                    </div>
-                    <div className='AddRecipe-form--group'>
-                        <label htmlFor='categoria'>Categoria: </label>
-                        <select required name='categoria' className='AddRecipe-form--input' defaultValue={'default'} ref={categoryInput}>
-                            <option value="default" disabled></option>
-
-                            {categories.map((category) => 
-                                <option key={ category.id } value={category.label}>{ category.label }</option>
-                            )}
-                        </select>
-                    </div>
-                    <div className='AddRecipe-form--group'>
-                        <label htmlFor='instructions'>Receita: </label>
-                        <textarea required name='instructions' className='AddRecipe-form--input'  rows={12} ref={instructionsInput}/>
-                    </div>
-                    <Button label={'Salvar receita'} action={send} />
+                    <Input label='Nome' name='name' ref={nameInput}  />
+                    <Input label='Url da imagem' name='imageUrl' ref={imageUrlInput} onBlur={changeImage} />
+                    <Select label='Categoria' name='categoria' ref={categoryInput} options={ categories } />
+                    <TextArea label='Instruções' name='instructions' rows={12} ref={instructionsInput} />
+                    <Button label='Salvar receita' action={send} />
                     
                 </form>
                 <img className='AddRecipe-image' src={ imagePreview || defaultImage['default']} />
