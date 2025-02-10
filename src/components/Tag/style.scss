@@ -1,32 +1,31 @@
 .Tag {
-    padding: 4px 24px;
-    font-size: 14px;
-    border-radius: 20px;
-    width: fit-content;
+  padding: 4px 24px;
+  font-size: 14px;
+  border-radius: 20px;
+  width: fit-content;
 
-    &.blue {
-        background-color: #B9D5E9;
-        color: #024879
-    }
+  &.blue {
+    background-color: #b9d5e9;
+    color: #024879;
+  }
 
-    &.pink {
-        background-color: #EFCFCE;
-        color: #7C403E
-    }
+  &.pink {
+    background-color: #efcfce;
+    color: #7c403e;
+  }
 
+  &.purple {
+    background-color: #e4c5d4;
+    color: #7d3458;
+  }
 
-    &.purple {
-        background-color: #E4C5D4;
-        color: #7D3458
-    }
+  &.green {
+    background-color: #bfcdab;
+    color: #334021;
+  }
 
-    &.green {
-        background-color: #BFCDAB;
-        color: #334021;            
-    }
-
-    &.yellow {
-        background-color: #FFD5A3;
-        color: #865B28;            
-    }
+  &.yellow {
+    background-color: #ffd5a3;
+    color: #865b28;
+  }
 }

@@ -1,11 +1,9 @@
-
-import './style.scss'
-import { defaultColorRecipe } from '../../shared/defaultColorRecipe'
+import './style.scss';
 
 export default function Button({ label, action }) {
-    return (
-        <button type='button' onClick={action} className='Button'>
-            { label }
-        </button>
-    )
-  }
+  return (
+    <button type="button" onClick={action} className="Button">
+      {label}
+    </button>
+  );
+}
