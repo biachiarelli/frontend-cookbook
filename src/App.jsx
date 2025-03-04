@@ -2,6 +2,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Home from './pages/Home';
 import AddRecipe from './pages/AddRecipe';
 import DetailsRecipe from './pages/DetailsRecipe';
+import './assets/sass/main.scss'
 
 function App() {
   return (

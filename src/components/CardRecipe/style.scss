@@ -1,5 +1,5 @@
 .CardRecipe {
-  background-color: #ffffff;
+  background-color: var(--white);
   padding: 16px;
   border-radius: 8px;
   display: flex;
@@ -41,19 +41,19 @@
   &-title {
     font-size: 18px;
     font-weight: bold;
-    color: #4d4d4d;
+    color: var(--gray-700);
     margin: 0;
   }
 
   &-text {
     font-size: 16px;
-    color: #909090;
+    color: var(--gray-600);
     margin: 0;
   }
 
   &-link {
     font-size: 16px;
-    color: #7c403e;
+    color: var(--purple);
     text-align: left;
     width: 100%;
     padding-top: 16px;

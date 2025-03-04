@@ -1,5 +1,5 @@
 .CardCategory {
-  color: #ffffff;
+  color: var(--white);
   font-weight: bold;
   font-size: 16px;
   padding: 40px 16px;
@@ -27,29 +27,29 @@
   }
 
   &.lightBlue {
-    background-color: #ebf4f4;
-    color: #265271;
+    background-color: var(--blue-100);
+    color: var(--blue-300);
   }
 
   &.blue {
-    background-color: #024879;
+    background-color: var(--blue);
   }
 
   &.pink {
-    background-color: #efcfce;
-    color: #641010;
+    background-color: var(--pink);
+    color: var(--pink-400);
   }
 
   &.purple {
-    background-color: #7d3458;
+    background-color: var(--purple);
   }
 
   &.green {
-    background-color: #bfcdab;
+    background-color: var(--green);
   }
 
   &.yellow {
-    background-color: #ffd5a3;
-    color: #7c5738;
+    background-color: var(--yellow);
+    color: var(--yellow-400);
   }
 }

@@ -5,27 +5,27 @@
   width: fit-content;
 
   &.blue {
-    background-color: #b9d5e9;
-    color: #024879;
+    background-color: var(--blue-100);
+    color: var(--blue);
   }
 
   &.pink {
-    background-color: #efcfce;
-    color: #7c403e;
+    background-color: var(--pink-200);
+    color: var(--pink-400);
   }
 
   &.purple {
-    background-color: #e4c5d4;
-    color: #7d3458;
+    background-color: var(--purple-100);
+    color: var(--purple);
   }
 
   &.green {
-    background-color: #bfcdab;
-    color: #334021;
+    background-color: var(--green-100);
+    color: var(--green-400);
   }
 
   &.yellow {
-    background-color: #ffd5a3;
-    color: #865b28;
+    background-color: var(--yellow-100);
+    color: var(--yellow-400);
   }
 }

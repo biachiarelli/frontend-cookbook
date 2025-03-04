@@ -4,7 +4,7 @@
   top: 40px;
   right: 40px;
   padding: 24px;
-  background-color: #ffffff;
+  background-color: var(--white);
   border-left: 5px solid;
   box-shadow:
     0 4px 12px 0 rgba(135, 135, 135, 0.2),
@@ -16,21 +16,21 @@
   &.success {
     font-size: 16px;
     font-weight: 500;
-    color: #467843;
-    border-color: #467843;
+    color: var(--success);
+    border-color: var(--success);
   }
 
   &.error {
     font-size: 16px;
     font-weight: 500;
-    color: #a92919;
-    border-color: #a92919;
+    color: var(--error);
+    border-color: var(--error);
   }
 
   &.warning {
     font-size: 16px;
     font-weight: 500;
-    color: #c1b720;
-    border-color: #c1b720;
+    color: var(--warning);
+    border-color: var(--warning);
   }
 }
